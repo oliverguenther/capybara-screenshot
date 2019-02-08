@@ -227,6 +227,9 @@ Capybara::Screenshot.s3_configuration = {
 }
 ```
 
+The access key used for S3 uploads need to have at least the `s3:PutObject` and `s3:GetBucketLocation` permissions on the bucket to succeed.
+
+
 It is also possible to specify the object parameters such as acl.
 Configure the capybara-screenshot with these options in this way:
 
